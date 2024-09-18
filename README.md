@@ -1,139 +1,158 @@
-#SmartStock: Inventory Management System
+# SmartStock: Inventory Management System
+
 Welcome to SmartStock, an advanced inventory management system designed for supermarkets. This project utilizes the MERN stack (MongoDB, Express, React, Node.js) to create a comprehensive solution for managing products, orders, stock alerts, and sales analytics.
 
-Table of Contents
-Project Overview
-Features
-Technologies Used
-Installation
-Usage
-Project Structure
-API Endpoints
-Frontend Screenshots
-Contributing
-License
-Project Overview
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [API Endpoints](#api-endpoints)
+- [Frontend Screenshots](#frontend-screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Overview
+
 SmartStock aims to streamline supermarket operations by providing tools for inventory management, real-time stock alerts, order tracking, and sales analytics. The system includes role-based dashboards for different user types, including Admins, Managers, Cashiers, and Suppliers.
 
-Features
-Role-Based Access Control: Customizable dashboards for Admins, Managers, Cashiers, and Suppliers.
-Product Management: Add, update, delete, and view products with real-time updates.
-Order Management: Create, view, and update orders with role-specific access.
-Stock Alerts: Automated alerts for low stock levels, visible to Admins, Managers, and Suppliers.
-Sales Analytics: Comprehensive sales reports and trends visualization.
-Real-Time Updates: WebSocket integration for real-time notifications.
-Python Integration: Advanced analytics using Python scripts for predictive analysis.
-User Management: Admin capabilities to manage users and assign roles.
-Technologies Used
-Frontend:
+## Features
+- **Role-Based Access Control:** Customizable dashboards for Admins, Managers, Cashiers, and Suppliers.
+- **Product Management:** Add, update, delete, and view products with real-time updates.
+- **Order Management:** Create, view, and update orders with role-specific access.
+- **Stock Alerts:** Automated alerts for low stock levels, visible to Admins, Managers, and Suppliers.
+- **Sales Analytics:** Comprehensive sales reports and trend visualizations.
+- **Real-Time Updates:** WebSocket integration for real-time notifications.
+- **Python Integration:** Advanced analytics using Python scripts for predictive analysis.
+- **User Management:** Admin capabilities to manage users and assign roles.
 
-React
-React Router
-Redux (optional for state management)
-WebSocket
-Backend:
+## Technologies Used
+### Frontend:
+- React
+- React Router
+- Redux (optional for state management)
+- WebSocket
 
-Node.js
-Express
-MongoDB
-Mongoose
-Integration:
+### Backend:
+- Node.js
+- Express
+- MongoDB
+- Mongoose
 
-Python for advanced analytics
-WebSocket for real-time updates
-Installation
-Prerequisites
-Node.js
-MongoDB
-Python (for advanced analytics)
-Setup
-Clone the Repository
- 
-git clone https://github.com/Muralichowdhary/SmartStock.git
-cd SmartStock
-Install Backend Dependencies
+### Integration:
+- Python for advanced analytics
+- WebSocket for real-time updates
 
- 
-cd backend
-npm install
-Install Frontend Dependencies
+## Installation
 
- 
-cd ../frontend
-npm install
-Setup Environment Variables
+### Prerequisites
+- Node.js
+- MongoDB
+- Python (for advanced analytics)
 
-Create a .env file in both frontend and backend directories with the necessary environment variables.
+### Setup
 
-Run the Application
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/Muralichowdhary/SmartStock.git
+    cd SmartStock
+    ```
 
-Start the backend server:
+2. **Install Backend Dependencies:**
+    ```bash
+    cd backend
+    npm install
+    ```
 
- 
-cd backend
-npm start
-Start the frontend development server:
- 
-cd ../frontend
-npm start
-Usage
-Access the Application: Navigate to http://localhost:3000 to view the application.
+3. **Install Frontend Dependencies:**
+    ```bash
+    cd ../frontend
+    npm install
+    ```
 
-Login: Use the provided credentials to access different roles:
+4. **Setup Environment Variables:**
+   - Create a `.env` file in both `frontend` and `backend` directories with the necessary environment variables.
 
-Admin: admin@example.com / adminpassword
-Manager: manager@example.com / managerpassword
-Cashier: cashier@example.com / cashierpassword
-Supplier: supplier@example.com / supplierpassword
-Explore Features:
+### Run the Application
 
-Admins can manage products, orders, users, and settings.
-Managers can view and manage inventory, orders, and reports.
-Cashiers can process orders and view product details.
-Suppliers can monitor stock alerts related to their products.
-Project Structure
-frontend/: React application
+- **Start the backend server:**
+    ```bash
+    cd backend
+    npm start
+    ```
 
-src/components/: React components
-src/pages/: Page components
-src/services/: API services
-backend/: Node.js + Express application
+- **Start the frontend development server:**
+    ```bash
+    cd ../frontend
+    npm start
+    ```
 
-models/: Mongoose models
-routes/: API routes
-controllers/: Request handlers
-middlewares/: Authentication and validation middleware
-API Endpoints
-User Authentication:
+## Usage
 
-POST /api/auth/register: Register a new user
-POST /api/auth/login: Login and receive a JWT token
-Product Management:
+1. **Access the Application:** Navigate to `http://localhost:3000` to view the application.
 
-GET /api/products: Retrieve all products
-POST /api/products: Add a new product
-PUT /api/products/:id: Update a product
-DELETE /api/products/:id: Delete a product
-Order Management:
+2. **Login:** Use the provided credentials to access different roles:
+    - **Admin:** `admin@example.com` / `adminpassword`
+    - **Manager:** `manager@example.com` / `managerpassword`
+    - **Cashier:** `cashier@example.com` / `cashierpassword`
+    - **Supplier:** `supplier@example.com` / `supplierpassword`
 
-GET /api/orders: Retrieve all orders
-POST /api/orders: Create a new order
-PUT /api/orders/:id: Update an order status
-DELETE /api/orders/:id: Cancel an order
-Stock Alerts:
+3. **Explore Features:**
+   - **Admins:** Manage products, orders, users, and settings.
+   - **Managers:** View and manage inventory, orders, and reports.
+   - **Cashiers:** Process orders and view product details.
+   - **Suppliers:** Monitor stock alerts related to their products.
 
-GET /api/alerts: Retrieve stock alerts
-Sales Analytics:
+## Project Structure
 
-GET /api/analytics/sales: Retrieve sales data
-Frontend Screenshots
+- **frontend/**: React application
+  - `src/components/`: React components
+  - `src/pages/`: Page components
+  - `src/services/`: API services
 
-Contributing
+- **backend/**: Node.js + Express application
+  - `models/`: Mongoose models
+  - `routes/`: API routes
+  - `controllers/`: Request handlers
+  - `middlewares/`: Authentication and validation middleware
+
+## API Endpoints
+
+### User Authentication:
+- **POST** `/api/auth/register`: Register a new user
+- **POST** `/api/auth/login`: Login and receive a JWT token
+
+### Product Management:
+- **GET** `/api/products`: Retrieve all products
+- **POST** `/api/products`: Add a new product
+- **PUT** `/api/products/:id`: Update a product
+- **DELETE** `/api/products/:id`: Delete a product
+
+### Order Management:
+- **GET** `/api/orders`: Retrieve all orders
+- **POST** `/api/orders`: Create a new order
+- **PUT** `/api/orders/:id`: Update an order status
+- **DELETE** `/api/orders/:id`: Cancel an order
+
+### Stock Alerts:
+- **GET** `/api/alerts`: Retrieve stock alerts
+
+### Sales Analytics:
+- **GET** `/api/analytics/sales`: Retrieve sales data
+
+## Frontend Screenshots
+*(Add screenshots here)*
+
+## Contributing
 Contributions are welcome! Please follow these steps:
-Not fully developed.Developement is going on.
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Commit your changes and push to your fork.
-Submit a pull request with a description of your changes.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push to your fork.
+4. Submit a pull request with a description of your changes.
+
+*Note: The project is still under development.*
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
