@@ -144,5 +144,3 @@ Commit your changes and push to your fork.
 Submit a pull request with a description of your changes.
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-Feel free to customize the README further based on your project specifics and any additional features or instructions you want to include
