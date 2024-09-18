@@ -48,21 +48,17 @@ MongoDB
 Python (for advanced analytics)
 Setup
 Clone the Repository
-
-bash
-Copy code
+ 
 git clone https://github.com/Muralichowdhary/SmartStock.git
 cd SmartStock
 Install Backend Dependencies
 
-bash
-Copy code
+ 
 cd backend
 npm install
 Install Frontend Dependencies
 
-bash
-Copy code
+ 
 cd ../frontend
 npm install
 Setup Environment Variables
@@ -73,14 +69,11 @@ Run the Application
 
 Start the backend server:
 
-bash
-Copy code
+ 
 cd backend
 npm start
 Start the frontend development server:
-
-bash
-Copy code
+ 
 cd ../frontend
 npm start
 Usage
@@ -137,7 +130,7 @@ Frontend Screenshots
 
 Contributing
 Contributions are welcome! Please follow these steps:
-
+Not fully developed.Developement is going on.
 Fork the repository.
 Create a new branch for your feature or bug fix.
 Commit your changes and push to your fork.
