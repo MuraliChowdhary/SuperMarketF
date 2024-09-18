@@ -1,4 +1,4 @@
-SmartStock: Inventory Management System
+#SmartStock: Inventory Management System
 Welcome to SmartStock, an advanced inventory management system designed for supermarkets. This project utilizes the MERN stack (MongoDB, Express, React, Node.js) to create a comprehensive solution for managing products, orders, stock alerts, and sales analytics.
 
 Table of Contents
